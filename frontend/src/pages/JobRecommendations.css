@@ -1,0 +1,280 @@
+
+.job-page {
+    padding: 30px;
+    color: #1e293b;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.job-header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.job-header p {
+    color: #64748b;
+}
+
+.job-header-icon {
+    font-size: 42px;
+    background: #eff6ff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.job-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.job-stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.job-stat-card span {
+    color: #64748b;
+}
+
+.job-stat-card h2 {
+    font-size: 27px;
+    margin-top: 10px;
+    color: #2563eb;
+}
+
+.job-toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.job-toolbar input,
+.job-toolbar select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    min-width: 150px;
+}
+
+.job-toolbar input {
+    flex: 1;
+}
+
+.job-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.job-tabs button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.job-tabs button.active {
+    background: #2563eb;
+    color: white;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+.job-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.job-card h3 {
+    font-size: 19px;
+    margin-bottom: 6px;
+}
+
+.company-name {
+    color: #64748b;
+}
+
+.match-badge {
+    color: #15803d;
+    background: #dcfce7;
+    padding: 7px 10px;
+    border-radius: 20px;
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.job-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.job-description {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.match-progress {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.match-progress-fill {
+    height: 100%;
+    background: #16a34a;
+    border-radius: 20px;
+}
+
+.skill-summary {
+    font-size: 12px;
+    color: #64748b;
+    margin: 8px 0 18px;
+}
+
+.skill-section {
+    margin-bottom: 17px;
+}
+
+.skill-section h4 {
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.matched-tag,
+.missing-tag {
+    padding: 6px 9px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.matched-tag {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.missing-tag {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.job-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.apply-button,
+.save-button {
+    padding: 11px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.apply-button {
+    background: #2563eb;
+    color: white;
+    flex: 1;
+}
+
+.save-button {
+    background: white;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+}
+
+.job-loading,
+.jobs-loading,
+.job-empty {
+    padding: 40px;
+    text-align: center;
+    color: #64748b;
+}
+
+.job-error {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .job-page {
+        padding: 16px;
+    }
+
+    .job-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .job-toolbar {
+        flex-direction: column;
+    }
+
+    .job-toolbar input,
+    .job-toolbar select {
+        width: 100%;
+    }
+
+    .job-header h1 {
+        font-size: 23px;
+    }
+}
+.unavailable-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+    border: none;
+}
+
+.unavailable-button:disabled {
+    pointer-events: none;
+}

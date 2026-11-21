@@ -1,0 +1,148 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ishika@gmail.com",
+  "password": "ishika"
+}
+
+
+### Generate or fetch the 7-day study plan
+GET http://localhost:5000/api/study-plan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### Get career roles and skills
+GET http://localhost:5000/api/skill-gap
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### Save Python proficiency
+PUT http://localhost:5000/api/skill-gap/skills/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+{
+  "proficiency_level": 2
+}
+### Analyze Software Developer career path
+GET http://localhost:5000/api/skill-gap/analysis/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+{
+  "proficiency_level": 2
+}
+
+### Generate AI / ML Engineer Learning Roadmap
+GET http://localhost:5000/api/learning-roadmap/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+
+### Mark learning task completed
+PUT http://localhost:5000/api/learning-roadmap/task/TASK_ID
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+
+{
+  "status": "completed"
+}
+
+### Mark Deep Learning task completed
+PUT http://localhost:5000/api/learning-roadmap/task/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+
+{
+  "status": "completed"
+}
+
+
+@baseUrl = http://localhost:5000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### 1. Get personalized job recommendations
+GET {{baseUrl}}/api/jobs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### 2. Save a job (Job ID: 3)
+POST {{baseUrl}}/api/jobs/save/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### 3. View saved jobs
+GET {{baseUrl}}/api/jobs/saved
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### 4. Remove a saved job (Job ID: 3)
+DELETE {{baseUrl}}/api/jobs/save/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+
+@baseUrl = http://localhost:5000
+@token =  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+
+### 1. Start Software Developer Interview
+POST {{baseUrl}}/api/interviews/start
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+Content-Type: application/json
+
+{
+    "roleId": 1,
+    "difficulty": "Easy",
+    "totalQuestions": 5
+}
+
+### 2. Submit Answer
+POST {{baseUrl}}/api/interviews/answer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+Content-Type: application/json
+
+{
+    "sessionId": 1,
+    "questionId": 1,
+    "answer": "Object Oriented Programming uses classes and objects. Its four pillars include encapsulation, inheritance, polymorphism and abstraction."
+}
+
+### 3. Complete Interview
+POST {{baseUrl}}/api/interviews/complete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### 4. Interview History
+GET {{baseUrl}}/api/interviews/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### 5. Interview Report
+GET {{baseUrl}}/api/interviews/report/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+
+
+### Submit answer to Question 2
+
+POST http://localhost:5000/api/interviews/answer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+Content-Type: application/json
+
+{
+    "sessionId": 1,
+    "questionId": 4,
+    "answer": "The four pillars of OOP are encapsulation, inheritance, polymorphism and abstraction. Encapsulation protects data, inheritance allows code reuse, polymorphism allows different behaviors, and abstraction hides implementation details."
+}
+
+### Complete Interview
+
+POST http://localhost:5000/api/interviews/complete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### Get Interview Report
+
+GET http://localhost:5000/api/interviews/report/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MDgxNDM1LCJleHAiOjE3OTUxNjc4MzV9.uIO-dVN4gdL_mLVG6BBEfayDU591NHv3fWIkwtnFnco
+
+### Student Analytics API
+GET http://localhost:5000/api/analytics
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MjY0MjE1LCJleHAiOjE3OTUzNTA2MTV9.whoNloTaEFvGe8KAGqUc9JfBNt8q_z9RN8F5_gkZses
+
+### Enhanced Student Insights
+GET http://localhost:5000/api/insights
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk1MjY0MjE1LCJleHAiOjE3OTUzNTA2MTV9.whoNloTaEFvGe8KAGqUc9JfBNt8q_z9RN8F5_gkZses

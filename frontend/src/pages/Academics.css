@@ -1,0 +1,159 @@
+
+.academics-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f6f7fc;
+  font-family: Arial, sans-serif;
+  color: #252849;
+}
+
+.academics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.academics-header h1 {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.academics-header p {
+  color: #747995;
+}
+
+.academics-header button,
+.academic-form-card button {
+  background: #7950e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+.academic-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.summary-card,
+.academic-form-card,
+.academic-records {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(30, 30, 80, 0.05);
+}
+
+.summary-card span {
+  color: #747995;
+}
+
+.summary-card h2 {
+  color: #7950e8;
+  font-size: 28px;
+}
+
+.academic-form-card {
+  max-width: 650px;
+  margin-bottom: 25px;
+}
+
+.academic-form-card h2,
+.academic-records h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.academic-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.academic-form-card label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.academic-form-card input,
+.academic-form-card select {
+  padding: 13px;
+  border: 1px solid #dce0eb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.academic-form-card input:focus,
+.academic-form-card select:focus {
+  outline: 2px solid #bba5ff;
+}
+
+.academic-form-card button {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.academic-form-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.academic-error {
+  color: #dc2626;
+}
+
+.academic-success {
+  color: #15803d;
+}
+
+.academic-table-wrapper {
+  overflow-x: auto;
+}
+
+.academic-records table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.academic-records th,
+.academic-records td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.academic-records th {
+  color: #7950e8;
+  background: #f8f6ff;
+}
+
+.delete-record {
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .academics-page {
+    padding: 18px;
+  }
+
+  .academics-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .academic-summary {
+    grid-template-columns: 1fr;
+  }
+}

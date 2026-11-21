@@ -1,0 +1,182 @@
+
+.roadmap-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f7f8fc;
+  color: #20243a;
+}
+
+.roadmap-header {
+  margin-bottom: 25px;
+}
+
+.roadmap-eyebrow {
+  color: #6754d8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.roadmap-header h1 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.roadmap-header p {
+  color: #74788b;
+}
+
+.roadmap-selector,
+.roadmap-progress-card,
+.roadmap-task-section {
+  padding: 24px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.roadmap-selector label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.roadmap-selector select {
+  width: 100%;
+  max-width: 350px;
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.roadmap-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.roadmap-stat {
+  padding: 22px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.roadmap-stat span {
+  display: block;
+  color: #74788b;
+  margin-bottom: 10px;
+}
+
+.roadmap-stat strong {
+  font-size: 26px;
+  color: #6754d8;
+}
+
+.roadmap-progress-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roadmap-progress-heading h2,
+.roadmap-task-section h2 {
+  font-size: 20px;
+}
+
+.roadmap-progress-track {
+  height: 12px;
+  margin-top: 15px;
+  background: #ececf4;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.roadmap-progress-fill {
+  height: 100%;
+  background: #6754d8;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.roadmap-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.roadmap-task.completed h3 {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.roadmap-skill-name {
+  color: #6754d8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.roadmap-task h3 {
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.roadmap-task p {
+  color: #74788b;
+  font-size: 14px;
+}
+
+.roadmap-duration {
+  color: #777;
+  font-size: 12px;
+}
+
+.roadmap-task button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.roadmap-pending-button {
+  background: #6754d8;
+  color: white;
+}
+
+.roadmap-completed-button {
+  background: #e4f7ed;
+  color: #16784a;
+}
+
+.roadmap-error {
+  padding: 12px;
+  margin-bottom: 16px;
+  background: #ffe8e8;
+  color: #a12626;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .roadmap-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap-page {
+    padding: 16px;
+  }
+
+  .roadmap-task {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

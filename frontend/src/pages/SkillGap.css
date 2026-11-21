@@ -1,0 +1,207 @@
+
+.skill-page {
+  padding: 30px;
+  color: #20243a;
+  background: #f7f8fc;
+  min-height: 100vh;
+}
+
+.skill-header {
+  margin-bottom: 28px;
+}
+
+.skill-eyebrow {
+  color: #6754d8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.skill-header h1 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.skill-header p,
+.skill-help {
+  color: #74788b;
+}
+
+.skill-role-section,
+.skill-assessment,
+.skill-analysis-section {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.skill-role-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skill-role-section select,
+.skill-row select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.skill-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.skill-summary-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.skill-summary-card span {
+  display: block;
+  color: #74788b;
+  margin-bottom: 10px;
+}
+
+.skill-summary-card strong {
+  font-size: 28px;
+  color: #6754d8;
+}
+
+.skill-level-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+  color: #666b7e;
+  font-size: 13px;
+}
+
+.skill-category {
+  margin-top: 25px;
+}
+
+.skill-category h3 {
+  color: #6754d8;
+  margin-bottom: 12px;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.skill-row select {
+  min-width: 130px;
+}
+
+.skill-progress-track {
+  height: 12px;
+  background: #ececf4;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  background: #6754d8;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.skill-gap-list {
+  margin-top: 20px;
+}
+
+.skill-gap-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.skill-gap-card p {
+  color: #777b8c;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.skill-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  background: #f0f0f0;
+}
+
+.skill-status.ready {
+  color: #16784a;
+  background: #e4f7ed;
+}
+
+.skill-status.needs-improvement {
+  color: #9a6500;
+  background: #fff3d9;
+}
+
+.skill-status.not-assessed {
+  color: #666;
+  background: #eee;
+}
+
+.skill-message {
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #e9f7ed;
+  color: #16784a;
+}
+
+@media (max-width: 700px) {
+  .skill-page {
+    padding: 16px;
+  }
+
+  .skill-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-row,
+  .skill-gap-card {
+    align-items: flex-start;
+  }
+
+  .skill-row {
+    flex-direction: column;
+  }
+}
+.learning-roadmap-link {
+  display: inline-block;
+  margin: 12px 0;
+  padding: 12px 18px;
+  background: #6754d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.learning-roadmap-link:hover {
+  background: #5140b5;
+}

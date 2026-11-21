@@ -1,0 +1,71 @@
+### Student Registration
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test Student",
+  "email": "student@example.com",
+  "password": "Student123"
+}
+
+### Student Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "student@example.com",
+  "password": "Student123"
+}
+### Student Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ishika@gmail.com",
+  "password": "ishika"
+}
+### Add Academic Record
+POST http://localhost:5000/api/academics
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk0ODE3OTUzLCJleHAiOjE3OTQ5MDQzNTN9.fEJPnNU9NZhcCW7nHk3jCFD8VOyEHJgawrTTBpjVTIs
+
+{
+  "subject_name": "Data Structures and Algorithms",
+  "semester": 7,
+  "marks": 82,
+  "max_marks": 100
+}
+### Get Academic Records
+GET http://localhost:5000/api/academics
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk0ODE3OTUzLCJleHAiOjE3OTQ5MDQzNTN9.fEJPnNU9NZhcCW7nHk3jCFD8VOyEHJgawrTTBpjVTIs
+
+### Add attendance
+POST http://localhost:5000/api/attendance
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk0ODE3OTUzLCJleHAiOjE3OTQ5MDQzNTN9.fEJPnNU9NZhcCW7nHk3jCFD8VOyEHJgawrTTBpjVTIs
+
+{
+  "subject_name": "Data Structures and Algorithms",
+  "attendance_date": "2026-11-17",
+  "status": "present"
+}
+### Get attendance
+GET http://localhost:5000/api/attendance
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk0ODE3OTUzLCJleHAiOjE3OTQ5MDQzNTN9.fEJPnNU9NZhcCW7nHk3jCFD8VOyEHJgawrTTBpjVTIs
+
+### AI Student Insights
+GET http://localhost:5000/api/insights
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk0ODE3OTUzLCJleHAiOjE3OTQ5MDQzNTN9.fEJPnNU9NZhcCW7nHk3jCFD8VOyEHJgawrTTBpjVTIs
+
+
+### Login again
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ishika@gmail.com",
+  "password": "ishika"
+}
+### AI Student Insights
+GET http://localhost:5000/api/insights
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJpc2hpa2FAZ21haWwuY29tIiwiaWF0IjoxNzk0OTM3MTM5LCJleHAiOjE3OTUwMjM1Mzl9.9ILklgXeYHhEwoslUd3b9ZomeK4_j3TOvBcyoPTyvB8
