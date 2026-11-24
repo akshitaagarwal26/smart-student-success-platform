@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./JobRecommendations.css";
 
-const API_URL = "http://localhost:5000/api/jobs";
+const API_URL = "https://smart-student-success-platform.onrender.com/api/jobs";
 
 function JobRecommendations() {
     const [jobs, setJobs] = useState([]);

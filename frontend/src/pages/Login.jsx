@@ -19,7 +19,7 @@ function Login() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://smart-student-success-platform.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {

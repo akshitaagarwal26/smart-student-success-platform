@@ -38,7 +38,7 @@ function ResumeAnalyzer() {
   const fetchHistory = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/resume/history",
+        "https://smart-student-success-platform.onrender.com/api/resume/history",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -91,7 +91,7 @@ function ResumeAnalyzer() {
       formData.append("roleId", selectedRole);
 
       const response = await fetch(
-        "http://localhost:5000/api/resume/analyze",
+        "https://smart-student-success-platform.onrender.com/api/resume/analyze",
         {
           method: "POST",
           headers: {

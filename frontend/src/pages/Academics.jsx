@@ -22,7 +22,7 @@ function Academics() {
   const fetchRecords = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/academics",
+        "https://smart-student-success-platform.onrender.com/api/academics",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -69,7 +69,7 @@ function Academics() {
       setSaving(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/academics",
+        "https://smart-student-success-platform.onrender.com/api/academics",
         {
           method: "POST",
           headers: {
@@ -121,7 +121,7 @@ function Academics() {
       setMessage("");
 
       const response = await fetch(
-        `http://localhost:5000/api/academics/${id}`,
+        `https://smart-student-success-platform.onrender.com/api/academics/${id}`,
         {
           method: "DELETE",
           headers: {

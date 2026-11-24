@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import "./LearningRoadmap.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://smart-student-success-platform.onrender.com/api";
 
 function LearningRoadmap() {
   const [searchParams] = useSearchParams();

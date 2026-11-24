@@ -18,7 +18,7 @@ import {
 
 import "./Analytics.css";
 
-const API_URL = "http://localhost:5000/api/analytics";
+const API_URL = "https://smart-student-success-platform.onrender.com/api/analytics";
 
 function Analytics() {
   const [data, setData] = useState(null);

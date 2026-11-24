@@ -25,7 +25,7 @@ function StudyPlanner() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:5000/api/study-plan",
+        "https://smart-student-success-platform.onrender.com/api/study-plan",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -69,7 +69,7 @@ function StudyPlanner() {
       setUpdatingTask(task.id);
 
       const response = await fetch(
-        `http://localhost:5000/api/study-plan/${task.id}`,
+        `https://smart-student-success-platform.onrender.com/api/study-plan/${task.id}`,
         {
           method: "PUT",
           headers: {

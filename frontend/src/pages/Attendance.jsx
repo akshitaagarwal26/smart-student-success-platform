@@ -23,7 +23,7 @@ function Attendance() {
   const fetchAttendance = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/attendance",
+        "https://smart-student-success-platform.onrender.com/api/attendance",
         {
           method: "GET",
           headers: {
@@ -80,7 +80,7 @@ function Attendance() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/attendance",
+        "https://smart-student-success-platform.onrender.com/api/attendance",
         {
           method: "POST",
           headers: {
@@ -128,7 +128,7 @@ function Attendance() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/attendance/${id}`,
+        `https://smart-student-success-platform.onrender.com/api/attendance/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -37,7 +37,7 @@ function Dashboard() {
         if (!token) return;
 
         const response = await fetch(
-          "http://localhost:5000/api/dashboard",
+          "https://smart-student-success-platform.onrender.com/api/dashboard",
           {
             headers: {
               Authorization: `Bearer ${token}`,

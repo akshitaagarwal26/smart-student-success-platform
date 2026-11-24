@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./MockInterview.css";
 
-const API_URL = "http://localhost:5000/api/interviews";
+const API_URL = "https://smart-student-success-platform.onrender.com/api/interviews";
 
 const ROLES = [
     { id: 1, name: "Software Developer" },

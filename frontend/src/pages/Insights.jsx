@@ -33,7 +33,7 @@ function Insights() {
 
       try {
         const response = await fetch(
-          "http://localhost:5000/api/insights",
+          "https://smart-student-success-platform.onrender.com/api/insights",
           {
             headers: {
               Authorization: `Bearer ${token}`,

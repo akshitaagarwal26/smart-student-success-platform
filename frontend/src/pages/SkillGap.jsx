@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./SkillGap.css";
 import { Link } from "react-router-dom";
 
-const API = "http://localhost:5000/api/skill-gap";
+const API = "https://smart-student-success-platform.onrender.com/api/skill-gap";
 
 function SkillGap() {
   const [roles, setRoles] = useState([]);
